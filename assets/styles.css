@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+/*BODY*/
+.container{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas:
+    "nav-bar dropdown"
+    "nav-bar catalog"
+    "info .";
+}
+
+/*NAVBAR*/
+.nav-bar{
+    grid-area: nav-bar;
+    height: 100vh;
+    padding: 20px;
+    background-color: black;
+}
+.nav-bar ul{
+    list-style: none;
+    text-align: center;
+    gap: 30px;
+}
+.nav-bar a{
+    color: inherit; 
+    text-decoration: none; 
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+}
+.navbar-item{
+    padding: 20px;
+}
+.nav-bar h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.flex-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*DROPDOWN*/
+.dropdown{
+    grid-area: dropdown;
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+select{
+    padding: 10px;
+    width: 90%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+/*MAIN*/
+.catalog{
+    grid-area: catalog;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: repeat(6 1fr);*/
+    height: 600px;
+    overflow-y: scroll;
+    gap: 20px;
+    padding: 20px;
+}
+.card img{
+    object-fit: cover; 
+    width: 100%;
+    height: auto; 
+}
+/*FOOTER*/
+.info{
+    grid-area: info;
+}
+

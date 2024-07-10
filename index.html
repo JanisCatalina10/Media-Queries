@@ -1,11 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hi
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Janis Caceres" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BTS</title>
+  </head>
+  <body>
+    <section class="container">
+      <!--NAVBAR-->
+      <nav class="nav-bar">
+        <div class="flex-items">
+          <div>
+            <h1>BTS Albums</h1>
+          </div>
+          <div>
+            <ul>
+              <li class="navbar-item"><a href="#home">Inicio</a></li>
+              <li class="navbar-item"><a href="#catalog">Catálogo</a></li>
+              <li class="navbar-item"><a href="#sales">Ofertas</a></li>
+              <li class="navbar-item"><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--BUSQUEDA POR FILTRO-->
+      <section class="dropdown">
+        <h3>Ordenar por:</h3>
+        <select name="filter" id="filter">
+          <option value="price">Precio</option>
+          <option value="bestsellers">Más vendidos</option>
+          <option value="new-releases">Nuevos Lanzamientos</option>
+          <option value="rm">RM</option>
+          <option value="jin">Jin</option>
+          <option value="suga">Suga</option>
+          <option value="j-hope">J-Hope</option>
+          <option value="jimin">Jimin</option>
+          <option value="v">V</option>
+          <option value="jungkook">Jungkook</option>
+        </select>
+      </section>
+      <!--MAIN-->
+      <section class="catalog">
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/BE.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">BE</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/SUGA_D-DAY.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">D-Day - SUGA</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/LY-answer.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Love Yourself: Answer</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/wings.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Wings</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/LY-tear.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Love Yourself: Tear</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/LY-her.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Love Yourself: Her</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/indigo.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">titulo</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/youngforever.png" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">titulo</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/Golden.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Golden Shine - JUNGKOOK</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/Golden-Substance.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Golden Substance - JUNGKOOK</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/Golden-solid.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Golden Solid - JUNGKOOK</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/astronaut.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">Astronaut - JIN</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/2-cool-4-skool.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">2 cool 4 skool</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/TMBMIL-1y2.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">The most beautiful moment in life : Part I y II</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <img src="./assets/imgs/Proof.jpg" alt="" />
+          </div>
+          <div>
+            <h2 class="card-title">titulo</h2>
+          </div>
+          <div>
+            <span class="card-price">$10.00</span>
+          </div>
+          <div>
+            <button class="card-button">Añadir al carrito</button>
+          </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <img src="./assets/imgs/you-never-walk-alone.jpg" alt="" />
+            </div>
+            <div>
+              <h2 class="card-title">titulo</h2>
+            </div>
+            <div>
+              <span class="card-price">$10.00</span>
+            </div>
+            <div>
+              <button class="card-button">Añadir al carrito</button>
+            </div>
+          </div>
+      </section>
+      <!--FOOTER-->
+      <footer class="info">Todos los derechos reservados</footer>
+    </section>
+  </body>
 </html>
