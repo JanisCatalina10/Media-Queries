@@ -70,16 +70,30 @@ select{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /*grid-template-rows: repeat(6 1fr);*/
-    height: 600px;
+    height: 700px;
     overflow-y: scroll;
     gap: 20px;
     padding: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    gap: 15px;
 }
 .card img{
     object-fit: cover; 
     width: 100%;
     height: auto; 
 }
+.card-button{
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+    color: white;
+}
+
 /*FOOTER*/
 .info{
     grid-area: info;
