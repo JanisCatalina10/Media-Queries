@@ -30,7 +30,11 @@
     text-decoration: none; 
     color: white;
     font-family: "Barlow", sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+}
+.nav-bar a:hover{
+    background-color: rgb(215, 173, 253);
+    padding: 20px;
 }
 .navbar-item{
     padding: 20px;
@@ -39,7 +43,7 @@
     color: white;
     font-family: "Barlow", sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 .flex-items{
     display: flex;
@@ -63,6 +67,9 @@ select{
     font-size: 15px;
     color: black;
 }
+.select-box{
+    appearance: none;
+}
 
 /*MAIN*/
 .catalog{
@@ -70,7 +77,7 @@ select{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /*grid-template-rows: repeat(6 1fr);*/
-    height: 700px;
+    height: 800px;
     overflow-y: scroll;
     gap: 20px;
     padding: 20px;
@@ -92,6 +99,13 @@ select{
     font-family: "Quicksand", sans-serif;
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+.card-button:hover{
+    background-color:rgb(215, 173, 253) ;
+}
+.card-button:focus{
+    background-color:rgb(231, 231, 231) ;
 }
 
 /*FOOTER*/
