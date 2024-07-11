@@ -18,7 +18,7 @@
     grid-area: header;
 }
 .nav-bar{
-    height: 105vh;
+    height: 106vh;
     padding: 20px;
     background-color: black;
     display: flex;
@@ -124,6 +124,7 @@ select{
 .pagination{
     grid-area: pagination;
     padding: 15px;
+    padding-top: 0;
     display: flex;
     justify-content: center; 
     flex-direction: row;
