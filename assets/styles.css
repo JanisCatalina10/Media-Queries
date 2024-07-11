@@ -8,18 +8,28 @@
     grid-template-columns: 15% 1fr;
     grid-template-rows: 10% 1fr auto;
     grid-template-areas:
-    "nav-bar dropdown"
-    "nav-bar catalog"
+    "header dropdown"
+    "header catalog"
     "info flex-container";
 }
 
 /*NAVBAR*/
+.header{
+    grid-area: header;
+}
 .nav-bar{
-    grid-area: nav-bar;
     height: 105vh;
     padding: 20px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+.menu-toggler{
+    color: white;
+    display: none;
+}
+
 .nav-bar ul{
     list-style: none;
     text-align: center;
@@ -45,11 +55,7 @@
     text-align: center;
     font-size: 40px;
 }
-.flex-items{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+
 
 /*DROPDOWN*/
 .dropdown{
@@ -145,14 +151,47 @@ select{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-    "nav-bar "
+    "header "
     "dropdown"
     "catalog "
     "flex-container"
     "info";
     }
+    :root{
+        --altura_header: 70px;
+    }
+    .header{
+        height: var(--altura_header);
+    }
     .nav-bar{
-        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;*/
+        position: relative;
+    }
+    .menu-toggler{
+        display: none;
+    }
+    .ul-links{
+        position: absolute;
+        top: var(--altura_header);
+        height: 0;
+        /*height: 100vh -var(--altura_header);*/
+        /*display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;*/
+        overflow: hidden;
+        font-size: 5px;
+    }
+    .toggler{
+        color: white;
+    }
+    .dropdown h3{
+        padding-bottom: 10px;
     }
     .catalog{
         grid-template-columns: 1fr;
