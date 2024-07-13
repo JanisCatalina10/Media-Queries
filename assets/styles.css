@@ -2,15 +2,17 @@
     padding: 0px;
     margin: 0px;
 }
+
 /*BODY*/
 .container{
     display: grid;
     grid-template-columns: 15% 1fr;
-    grid-template-rows: 10% 1fr auto;
+    grid-template-rows: 10%  1fr auto;
     grid-template-areas:
     "header dropdown"
     "header catalog"
-    "info .";
+    "info catalog";
+    
 }
 
 /*NAVBAR*/
@@ -84,7 +86,7 @@ select{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(5fr);
-    height: 700px;
+    height: 100vh;
     overflow-y: scroll;
     gap: 20px;
     padding: 20px;
@@ -158,7 +160,7 @@ select{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 26px;
     background-color: rgb(215, 173, 253);
     color: rgb(83, 2, 103);
     text-align: center;
