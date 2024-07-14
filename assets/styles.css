@@ -67,7 +67,7 @@
     font-family: "Quicksand", sans-serif;
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 .dropdown h3{
     padding-bottom: 10px
@@ -130,6 +130,7 @@ select{
 
 .pagination{
     padding: 15px;
+    padding-top: 20px;
     display: flex;
     justify-content: center; 
     flex-direction: row;
