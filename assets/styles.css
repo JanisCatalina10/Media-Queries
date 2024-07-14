@@ -10,8 +10,8 @@
     grid-template-rows: 10%  1fr auto;
     grid-template-areas:
     "header dropdown"
-    "header catalog"
-    "info catalog";
+    "header products"
+    "info products";
     
 }
 
@@ -81,12 +81,15 @@ select{
 }
 
 /*MAIN*/
+.products{
+    grid-area: products;
+    
+}
 .catalog{
-    grid-area: catalog;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(5fr);
-    height: 100vh;
+    height: 90vh;
     overflow-y: scroll;
     gap: 20px;
     padding: 20px;
@@ -174,7 +177,7 @@ select{
         grid-template-areas:
     "header "
     "dropdown"
-    "catalog "
+    "products "
     "info";
     }
     :root{
